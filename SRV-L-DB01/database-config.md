@@ -9,3 +9,17 @@ Criando arquivo [mysqld.cnf](https://github.com/idealista07/homelab/blob/main/SR
 ```
 sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
+Necessario reiniciar o serviço para alterações no arquivo
+```
+sudo systemctl restart mysql
+```
+Para Configurar a base para melhor segurança e desempenho deve-se seguir os passos abaixo:
+```
+mysql_secure_installation
+```
+<br>no
+<br>no
+<br>y
+<br>y
+<br>y
+<br>y
