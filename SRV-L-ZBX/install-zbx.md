@@ -1,10 +1,4 @@
-<!--
-### Hostname = SRV-L-ZBX
-
--->
-#### O intuito desse documento é criar um provisionamento sem falhas e seguro do zabbix 7.0, esse projeto aborda 2 servidores, um para banco de dados com o hostname SRV-L-DB01 e esse com o nome SRV-L-ZBX contendo o Zabbix Server e o Zabbix Agent passivo que será explicado ao longo desse documento.
-
-
+### Instalando o zabbix e suas dependencias 
 ##### Atualizando os pacotes existentes
 ```
 sudo apt update -y && sudo apt upgrade -y
