@@ -22,15 +22,33 @@ set global log_bin_trust_function_creators = 1;
 ```
 FLUSH PRIVILEGES;
 ```
+```
+quit;
+```
+#### Agora baixaremos o schema 
+OBS: Esse comando so funciona se o pacote zabbix-sql-scripts estiver instalado no servidor
+<br> os campos abaixo iniciado com -u e -p referencia a usuario e senha respectivamente cadastrado no banco
+```
+zcat /usr/share/zabbix-sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
+```
 Apos baixar o schema é necessario executar o comando abaixo:
 ```
+mysql -uroot -p
+```
+```
 set global log_bin_trust_function_creators = 0;
+```
+```
+quit;
 ```
 #### Banco do GLPI
 OBS: Se instalar no mesmo servidor é bom usar o @localhost para restringir apenas acesso local
 Preencha o nome da base substituindo o nome "glpi" no primeiro comando e final do terceiro.
 <br>Preencha o nome do usuario substituindo o nome "userglpi" no segundo comando e antes do * do terceiro comando.
 <br>Preencha a senha do usuario substituindo o nome "senha" no segundo comando.
+```
+mysql -uroot -p
+```
 ```
 create database glpi;
 ```
