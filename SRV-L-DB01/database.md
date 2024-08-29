@@ -3,7 +3,8 @@
 mysql -uroot -p
 ```
 #### Banco do Zabbix
-Preencha o nome da base substituindo o nome "zabbix" no primeiro comando e final do terceiro.
+OBS: Se instalar no mesmo servidor deve-se usar o @localhost para restringir apenas acesso local
+<br><br>Preencha o nome da base substituindo o nome "zabbix" no primeiro comando e final do terceiro.
 <br>Preencha o nome do usuario substituindo o nome "userzabbix" no segundo comando e antes do * do terceiro comando.
 <br>Preencha a senha do usuario substituindo o nome "senha" no segundo comando.
 ```
