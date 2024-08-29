@@ -12,10 +12,10 @@ Arquivos manipulados:
 
 ##### Para que funcione sem problemas é importante seguir os passos abaixo:
 Inicie a instalação com os passos no documento [install-zbx.md](https://github.com/idealista07/homelab/blob/main/SRV-L-ZBX/install-zbx.md) e edite o documento [/etc/zabbix/zabbix_server.conf](https://github.com/idealista07/homelab/blob/main/SRV-L-ZBX/zabbix_server.conf) alterando os seguintes campos:
-<br> <br> DBHost=[ip do banco de dados] linha 83
-<br> DBUser=[usuario] linha 111
-<br> DBPassword=[senha] linha 119
-<br> DBName=[nome do banco] linha 93
+<br> <br> DBHost=[ip do banco de dados] na linha 83
+<br> DBUser=[usuario] na linha 111
+<br> DBPassword=[senha] na linha 119
+<br> DBName=[nome do banco] na linha 93
 ###### Agora iremos reiniciar o serviço e habilitar para que iniciem junto com o sistema operacional
 ```
 systemctl restart zabbix-server zabbix-agent apache2
@@ -25,8 +25,8 @@ Libere as portas no firewall para funcionamento dos serviços usando os passos n
 
 Edite o arquivo [/etc/zabbix/zabbix_agentd.conf](https://github.com/idealista07/homelab/blob/main/SRV-L-ZBX/zabbix_agentd.conf) para configurar o agente passivo, alterando as seguintes informações:
 <br> 
-<br> hostname=[nome da maquina cliente]
-<br> server=[ip zabbix]
+<br> hostname=[nome da maquina cliente] na linha 182
+<br> server=[ip zabbix] na linha 117
 <br> 
 <br> Toda alteração realizada nesse arquivo é necessario reiniciar o serviço
 ```
