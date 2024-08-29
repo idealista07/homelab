@@ -6,7 +6,7 @@ Criar o template para coleta de dados [template_db_mysql.conf](https://github.co
 ```
 sudo vi /etc/zabbix/zabbix_agent.d/template_db_mysql.conf
 ```
-Configurar o agente Zabbix no arquivo [zabbix_agentd.conf]()
+Configurar o agente Zabbix no arquivo [zabbix_agentd.conf](https://github.com/idealista07/homelab/blob/main/SRV-L-ZBX/zabbix_agentd.conf)
 ```
 sudo vi /etc/zabbix/zabbix_agent/zabbix_agentd.conf
 ```
