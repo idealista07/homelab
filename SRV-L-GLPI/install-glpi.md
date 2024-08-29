@@ -18,15 +18,15 @@ sudo apt-get install php-curl php-gd php-intl php-mysqli php-bz2 php-zip php-exi
 sudo apt-get install php-dom php-fileinfo php-json php-simplexml php-ldap php-opcach
 ```
 #### Instalando o GLPI
-<br> acessando pasta tmp
+<br> Acessando pasta tmp
 ```
 cd /tmp
 ```
-<br> baixando arquivos de instalação
+<br> Baixando arquivos de instalação
 ```
 wget https://github.com/glpi-project/glpi/releases/download/10.0.16/glpi-10.0.16.tgz
 ```
-<br> descompactando glpi
+<br> Descompactando glpi
 ```
 tar -xvzf glpi-10.0.16.tgz
 ```
