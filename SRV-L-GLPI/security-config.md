@@ -36,3 +36,7 @@ vi /var/www/html/glpi/inc/based_config.php
 ```
 ini_set('session.cookie_httponly', 1);
 ```
+#### Apontamento dos diretorios, para reforçar a segurança
+```
+vi /var/www/html/glpi/config/local_define.php
+```
