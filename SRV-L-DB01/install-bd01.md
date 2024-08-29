@@ -23,3 +23,9 @@ sudo dpkg -i zabbix-release_7.0-2+ubuntu24.04_all.deb
 ```
 sudo apt update && sudo apt install mysql-server zabbix-sql-scripts zabbix-agent
 ```
+#### Apos a criação da base do Zabbix usaremos esse comando para baixar o schema
+OBS: Esse comando so funciona se o pacote zabbix-sql-scripts estiver instalado no servidor
+<br> os campos abaixo iniciado com -u e -p referencia a usuario e senha respectivamente cadastrado no banco
+```
+zcat /usr/share/zabbix-sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
+```
