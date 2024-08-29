@@ -12,10 +12,10 @@ Arquivos manipulados:
 
 ##### Para que funcione sem problemas é importante seguir os passos abaixo:
 Inicie a instalação com os passos no documento [install-zbx.md](https://github.com/idealista07/homelab/blob/main/SRV-L-ZBX/install-zbx.md) e edite o documento [/etc/zabbix/zabbix_server.conf](https://github.com/idealista07/homelab/blob/main/SRV-L-ZBX/zabbix_server.conf) alterando os seguintes campos:
-<br> <br> DBHost=[ip do banco de dados] 
-<br> DBUser=[usuario]
-<br> DBPassword=[senha]
-<br> DBName=[nome do banco]
+<br> <br> DBHost=[ip do banco de dados] linha 83
+<br> DBUser=[usuario] linha 111
+<br> DBPassword=[senha] linha 119
+<br> DBName=[nome do banco] linha 93
 ###### Agora iremos reiniciar o serviço e habilitar para que iniciem junto com o sistema operacional
 ```
 systemctl restart zabbix-server zabbix-agent apache2
