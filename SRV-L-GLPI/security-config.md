@@ -5,7 +5,10 @@ sudo mkdir /var/glpi_data
 ```
 sudo mkdir /var/glpi_log
 ```
-
+#### Movendo arquivos do GLPI para diretorio seguro
+```
+sudo mv /var/www/html/glpi/files/* /var/glpi_data
+```
 #### Mudando permissões dos diretorios
 ```
 chmod 775 /var/www/html/* -Rf
