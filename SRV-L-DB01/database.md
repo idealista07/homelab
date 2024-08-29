@@ -22,8 +22,12 @@ set global log_bin_trust_function_creators = 1;
 ```
 FLUSH PRIVILEGES;
 ```
-
+Apos baixar o schema é necessario executar o comando abaixo:
+```
+set global log_bin_trust_function_creators = 0;
+```
 #### Banco do GLPI
+OBS: Se instalar no mesmo servidor é bom usar o @localhost para restringir apenas acesso local
 Preencha o nome da base substituindo o nome "glpi" no primeiro comando e final do terceiro.
 <br>Preencha o nome do usuario substituindo o nome "userglpi" no segundo comando e antes do * do terceiro comando.
 <br>Preencha a senha do usuario substituindo o nome "senha" no segundo comando.
