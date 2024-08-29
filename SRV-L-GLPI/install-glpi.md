@@ -17,10 +17,6 @@ sudo apt-get install php-curl php-gd php-intl php-mysqli php-bz2 php-zip php-exi
 ```
 sudo apt-get install php-dom php-fileinfo php-json php-simplexml php-ldap php-opcach
 ```
-#### Editar arquivo [php.ini]() removendo comentarios do opcache, ou pode-se substituir pelo arquivo contido nesse repositorio
-```
-sudo vi /etc/php/8.3/apache2/php.ini
-```
 #### Instalando o GLPI
 <br> acessando pasta tmp
 ```
