@@ -1,0 +1,11 @@
+#phpmyadmin Container
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    container_name : phpmyadmin
+    hostname: phpmyadmin
+    ports:
+      - "8080:80"
+    env_file:
+      - .bd.env
+    #Contem parametro para solicitar a origem do banco
