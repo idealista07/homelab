@@ -1,0 +1,16 @@
+#GLPI Container
+  glpi:
+    image: elestio/glpi:latest
+    #image: fametec/glpi:latest
+    container_name : glpi
+    hostname: glpi
+    ports:
+      - "80:80"
+    volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+      - ./storage/www/html/glpi/:/var/www/html/glpi
+    #Contem a pasta de instalação, sendo possivel instalar plugins manualmente
+    environment:
+      - .db.env
+    restart: always
