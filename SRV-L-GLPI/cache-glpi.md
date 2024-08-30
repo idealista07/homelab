@@ -10,3 +10,21 @@ a2dissite 000-default
 ```
 sudo vi /etc/apache2/sites-available/glpi.conf
 ```
+#### habilitar a configuração criada
+```
+sudo a2ensite glpi.conf
+```
+```
+sudo a2enmod rewrite
+```
+#### Caso não esteja instalado
+```
+sudo apt install libapache2-mod-expires
+```
+```
+sudo a2enmod expires
+```
+#### Reiniciar serviço do Apache
+```
+systemctl restart apache2.service
+```
