@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+#MariaDB Container
+  mariadb:
+    image: mariadb:10.7
+    container_name: mariadb
+    hostname: mariadb
+    volumes:
+      - ./storage/lib/mysql:/var/lib/mysql
+    #Origem onde será armazenada os dados persistentes
+    env_file:
+      - .db.env
+    #contem variaveis de banco
+    #Caso mude as crendenciais desse arquivo é necessario remover a base e o container
