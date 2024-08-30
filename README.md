@@ -10,7 +10,7 @@ Aqui explico passo a passo o provisionamento de minha infraestrutura
 <br>| SRV-W-10LTSC
 <br>| EVE
 <br>| HACK-CATALINA
-<br>| SRV-L-DKR
+<br>| [SRV-L-DKR](https://github.com/idealista07/homelab/tree/main/SRV-L-DKR)
 <br>| [SRV-L-DB01](https://github.com/idealista07/homelab/tree/main/SRV-L-DB01)
 <br>| [SRV-L-ZBX](https://github.com/idealista07/homelab/tree/main/SRV-L-ZBX)
 <br>| [SRV-L-GLPI](https://github.com/idealista07/homelab/tree/main/SRV-L-GLPI)
