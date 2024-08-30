@@ -29,7 +29,7 @@ chown www-data /var/glpi_data/ -Rf
 ```
 chown www-data /var/glpi_log/ -Rf
 ```
-#### Proteção de cookies no arquivo [based_config.php](https://github.com/idealista07/homelab/blob/main/SRV-L-GLPI/based_config.php)
+#### Proteção de cookies no arquivo [based_config.php](https://github.com/idealista07/homelab/blob/main/SRV-L-GLPI/archive/based_config.php)
 ```
 vi /var/www/html/glpi/inc/based_config.php
 ```
