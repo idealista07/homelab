@@ -36,7 +36,7 @@ vi /var/www/html/glpi/inc/based_config.php
 ```
 ini_set('session.cookie_httponly', 1);
 ```
-#### Apontamento dos diretorios, para reforçar a segurança no arquivo [local_define.php](https://github.com/idealista07/homelab/blob/main/SRV-L-GLPI/local_define.php)
+#### Apontamento dos diretorios, para reforçar a segurança no arquivo [local_define.php](https://github.com/idealista07/homelab/blob/main/SRV-L-GLPI/archive/local_define.php)
 ```
 vi /var/www/html/glpi/config/local_define.php
 ```
