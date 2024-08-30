@@ -7,5 +7,5 @@
     ports:
       - "8080:80"
     env_file:
-      - .bd.env
+      - .db.env
     #Contem parametro para solicitar a origem do banco
